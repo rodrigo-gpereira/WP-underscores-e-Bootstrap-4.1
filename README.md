@@ -13,7 +13,9 @@ No momento o projeto ainda não é indicado para uso em produção pois ainda es
 Desenlvolva em cima deste pacote
 -----
 
-Necessário ter o Node.js instalado, execute o Npm install na pasta do projeto para instalar as dependencias.
+Crie uma nova pasta dentro de wp-content/themes da sua instalação Wordpress local, baixe o zip ou faça clone do repositório
+
+Necessário ter o Node.js instalado, execute o Npm install na pasta do projeto criada em /wp-content/themes/(pasta do tema) para instalar as dependencias.
 
 abra o arquivo gulpfile.js e altere a linha de proxy do browserSync para o endereço que subiu a instalação local do seu Wordpress.
 
