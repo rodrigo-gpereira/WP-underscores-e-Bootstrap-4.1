@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('card border-light mb-4'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('card mb-4'); ?>>
 
 	<!-- o tratamento da imagem é feito pela função em template-tags.php -->
 	<?php bootstrap_base_4_1_post_thumbnail(); ?>
@@ -54,9 +54,8 @@
 			) );
 			?>
 		</div><!-- .card-text -->
-
-		<footer class="entry-footer">
+	</div> <!-- .card-body -->
+		<footer class="card-footer">
 			<?php bootstrap_base_4_1_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
-	</div> <!-- .card-body -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -20,8 +20,6 @@ get_header();
 
 		<?php
 
-
-
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) :
