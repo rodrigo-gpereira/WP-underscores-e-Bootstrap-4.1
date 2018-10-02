@@ -10,10 +10,11 @@
  */
 
 ?>
-
+			</div>
+		</div>
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="footer" class="site-footer">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bootstrap-base-4-1' ) ); ?>">
 				<?php
@@ -27,8 +28,7 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bootstrap-base-4-1' ), 'bootstrap-base-4-1', '<a href="https://dev-frontend.oiweb.com.br/">Rodrigo Gomes</a>' );
 				?>
 		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	</footer><!-- #footer -->
 
 <?php wp_footer(); ?>
 

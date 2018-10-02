@@ -159,7 +159,7 @@ if ( ! function_exists( 'bootstrap_base_4_1_woocommerce_wrapper_before' ) ) {
 	 */
 	function bootstrap_base_4_1_woocommerce_wrapper_before() {
 		?>
-		<div id="primary" class="content-area">
+		<div id="primary" class="content-area col-12 col-md-8 col-lg-9">
 			<main id="main" class="site-main" role="main">
 			<?php
 	}
