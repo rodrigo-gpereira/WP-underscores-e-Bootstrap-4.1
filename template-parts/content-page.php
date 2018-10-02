@@ -35,7 +35,7 @@
 	</div> <!-- .card-body -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<footer class="card-footer">
 			<?php
 			edit_post_link(
 				sprintf(
