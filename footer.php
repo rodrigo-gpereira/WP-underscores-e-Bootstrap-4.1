@@ -14,8 +14,8 @@
 		</div>
 	</div><!-- #content -->
 
-	<footer id="footer" class="site-footer">
-		<div class="site-info">
+	<footer id="footer" class="site-footer text-muted blog-footer">
+		<div class="site-info container">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bootstrap-base-4-1' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */

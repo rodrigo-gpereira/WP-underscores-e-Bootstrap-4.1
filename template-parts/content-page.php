@@ -9,14 +9,19 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class('card mb-4'); ?>>
+
+<!-- o tratamento da imagem é feito pela função em template-tags.php -->
+<?php bootstrap_base_4_1_post_thumbnail(); ?>
+
+<div class="card-body">
+
+	<header>
 		<?php the_title( '<h1 class="card-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php bootstrap_base_4_1_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="card-text">
 		<?php
 		the_content();
 
@@ -25,7 +30,9 @@
 			'after'  => '</div>',
 		) );
 		?>
-	</div><!-- .entry-content -->
+	</div><!-- .card-text -->
+
+	</div> <!-- .card-body -->
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

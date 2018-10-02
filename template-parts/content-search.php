@@ -9,8 +9,12 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class('card mb-4'); ?>>
+
+<?php bootstrap_base_4_1_post_thumbnail(); ?>
+
+<div class="card-body">
+	<header>
 		<?php the_title( sprintf( '<h2 class="card-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
@@ -23,13 +27,16 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php bootstrap_base_4_1_post_thumbnail(); ?>
-
-	<div class="entry-summary">
+	<div class="card-text">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div><!-- .card-text -->
 
-	<footer class="entry-footer">
+
+	</div>
+
+	<footer class="card-footer">
 		<?php bootstrap_base_4_1_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		<?php bootstrap_base_4_1_entry_footer_tags(); ?>
+	</footer><!-- .card-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->

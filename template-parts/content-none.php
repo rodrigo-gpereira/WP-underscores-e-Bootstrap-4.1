@@ -9,7 +9,10 @@
 
 ?>
 
-<section class="no-results not-found">
+<section class="no-results not-found card">
+
+<div class="card-body">
+
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'bootstrap-base-4-1' ); ?></h1>
 	</header><!-- .page-header -->
@@ -48,4 +51,5 @@
 		endif;
 		?>
 	</div><!-- .page-content -->
+	</div><!-- .card-body -->
 </section><!-- .no-results -->
