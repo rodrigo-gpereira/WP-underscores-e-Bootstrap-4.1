@@ -140,7 +140,7 @@ if ( ! function_exists( 'bootstrap_base_4_1_post_thumbnail' ) ) :
 				'alt' => the_title_attribute( array(
 					'echo' => false,
 				) ),
-				'class' => 'img-fluid',
+				'class' => 'img-fluid card-img-top',
 			) );
 			?>
 		</a>

@@ -35,3 +35,9 @@ function bootstrap_base_4_1_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'bootstrap_base_4_1_pingback_header' );
+
+/**
+ *Alterar o padrão read More
+ */
+
+

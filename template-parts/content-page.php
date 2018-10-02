@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="display-3">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="card-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<?php bootstrap_base_4_1_post_thumbnail(); ?>

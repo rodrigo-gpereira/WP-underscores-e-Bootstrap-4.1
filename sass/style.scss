@@ -24,6 +24,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // Import do Scss Bootstrap completo
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
 html {
 	font-size: 1rem;
 }
@@ -32,4 +33,10 @@ html {
 	html {
 		font-size: 1.2rem;
 	}
+} 
+
+//extender o estilo de botões para o <!-- MORE --> link
+.more-link{
+	@extend .btn;
+	@extend .btn-primary;
 }
