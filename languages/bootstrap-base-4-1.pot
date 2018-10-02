@@ -92,12 +92,12 @@ msgstr ""
 
 #: inc/template-tags.php:72
 #. translators: %s: post title
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgid "Leave a Comment<span class=\"sr-only sr-only-focusable\"> on %s</span>"
 msgstr ""
 
 #: inc/template-tags.php:89 template-parts/content-page.php:35
 #. translators: %s: Name of current post. Only visible to screen readers
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgid "Edit <span class=\"sr-only sr-only-focusable\">%s</span>"
 msgstr ""
 
 #: search.php:21
@@ -132,7 +132,7 @@ msgstr ""
 
 #: template-parts/content.php:34
 #. translators: %s: Name of current post. Only visible to screen readers
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgid "Continue reading<span class=\"sr-only sr-only-focusable\"> \"%s\"</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme

@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="display-3">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<?php bootstrap_base_4_1_post_thumbnail(); ?>
@@ -34,7 +34,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'bootstrap-base-4-1' ),
+						__( 'Edit <span class="sr-only sr-only-focusable">%s</span>', 'bootstrap-base-4-1' ),
 						array(
 							'span' => array(
 								'class' => array(),

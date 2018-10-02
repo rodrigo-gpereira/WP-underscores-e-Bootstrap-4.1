@@ -79,7 +79,7 @@ if ( ! function_exists( 'bootstrap_base_4_1_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'bootstrap-base-4-1' ),
+						__( 'Leave a Comment<span class="sr-only sr-only-focusable"> on %s</span>', 'bootstrap-base-4-1' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -96,7 +96,7 @@ if ( ! function_exists( 'bootstrap_base_4_1_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'bootstrap-base-4-1' ),
+					__( 'Edit <span class="sr-only sr-only-focusable">%s</span>', 'bootstrap-base-4-1' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -127,7 +127,9 @@ if ( ! function_exists( 'bootstrap_base_4_1_post_thumbnail' ) ) :
 			?>
 
 			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail(null, array(
+					'class' => 'img-fluid',
+				)); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -138,6 +140,7 @@ if ( ! function_exists( 'bootstrap_base_4_1_post_thumbnail' ) ) :
 				'alt' => the_title_attribute( array(
 					'echo' => false,
 				) ),
+				'class' => 'img-fluid',
 			) );
 			?>
 		</a>
