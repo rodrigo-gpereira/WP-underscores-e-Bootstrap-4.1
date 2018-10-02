@@ -69,7 +69,35 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	$fields =  array(
+
+		'author' =>
+		  '<div class="form-group"><label for="author">' . __( 'Name', 'bs4Base' ) .
+		  ( $req ? '<span class="required">*</span>' : '' ) . '</label>' .
+		  '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+		  '" size="30"' . $aria_req . ' /></div>',
+	  
+		'email' =>
+		  '<div class="form-group"><label for="email">' . __( 'Email', 'bs4Base' ) .
+		  ( $req ? '<span class="required">*</span>' : '' ) . '</label>' .
+		  '<input class="form-control" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+		  '" size="30"' . $aria_req . ' /></div>',
+	  
+		'url' =>
+		  '<div class="form-group"><label for="url">' . __( 'Website', 'bs4Base' ) . '</label>' .
+		  '<input class="form-control" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+		  '" size="30" /></div>',
+	  );
+
+
+	$args = array(
+		'class_submit'      => 'btn btn-primary',
+		'comment_field'        => '<div class="form-group"><label for="comment">' . _x( 'Comment', 'bs4Base' ) . '</label> <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></div>',
+		'fields' => apply_filters( 'comment_form_default_fields', $fields ),
+	  );
+
+
+	comment_form($args);
 	?>
 
 </div><!-- #comments -->
