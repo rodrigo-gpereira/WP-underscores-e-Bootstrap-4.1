@@ -20,8 +20,9 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="comments-area card bg-light">
 
+<div class="card-body">
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
@@ -69,35 +70,34 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	$fields =  array(
+		$fields =  array(
 
 		'author' =>
-		  '<div class="form-group"><label for="author">' . __( 'Name', 'bs4Base' ) .
+		  '<div class="col-md-4"><div class="form-group"><label for="author">' . __( 'Name', 'bootstrap-base-4-1' ) .
 		  ( $req ? '<span class="required">*</span>' : '' ) . '</label>' .
 		  '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-		  '" size="30"' . $aria_req . ' /></div>',
+		  '" size="30"' . $aria_req . ' /></div></div>',
 	  
 		'email' =>
-		  '<div class="form-group"><label for="email">' . __( 'Email', 'bs4Base' ) .
+		  '<div class="col-md-4"><div class="form-group"><label for="email">' . __( 'Email', 'bootstrap-base-4-1' ) .
 		  ( $req ? '<span class="required">*</span>' : '' ) . '</label>' .
 		  '<input class="form-control" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-		  '" size="30"' . $aria_req . ' /></div>',
+		  '" size="30"' . $aria_req . ' /></div></div>',
 	  
 		'url' =>
-		  '<div class="form-group"><label for="url">' . __( 'Website', 'bs4Base' ) . '</label>' .
+		  '<div class="col-md-4"><div class="form-group"><label for="url">' . __( 'Website', 'bootstrap-base-4-1' ) . '</label>' .
 		  '<input class="form-control" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-		  '" size="30" /></div>',
+		  '" size="30" /></div></div>',
 	  );
-
 
 	$args = array(
 		'class_submit'      => 'btn btn-primary',
-		'comment_field'        => '<div class="form-group"><label for="comment">' . _x( 'Comment', 'bs4Base' ) . '</label> <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></div>',
+		'comment_field'        => '<div class="col-12"><div class="form-group"><label for="comment">' . _x( 'Comment', 'bootstrap-base-4-1' ) . '</label> <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></div></div>',
 		'fields' => apply_filters( 'comment_form_default_fields', $fields ),
 	  );
 
 
 	comment_form($args);
 	?>
-
+</div><!-- .card-body -->
 </div><!-- #comments -->

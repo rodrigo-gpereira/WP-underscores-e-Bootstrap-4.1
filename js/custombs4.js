@@ -1,5 +1,17 @@
 ( function( $ ) {
 
+    //Formulário
+
+    $('#commentform').addClass('form-row')
+    $('.comment-notes').addClass('col-12')
+
+    // Navegação de post
+    $('.post-navigation h2').removeClass('screen-reader-text').addClass('sr-only')
+    $('.nav-links').wrapInner('<div class="card-body">').addClass('card mb-3')
+    $('.nav-links .card-body').addClass('row')
+    $('.nav-previous').addClass('col-md-6')
+    $('.nav-next').addClass('col-md-6 text-right')
+
 	// Widgets
 
 	$('.widget').wrapInner('<div class="card-body">').addClass('bg-light mb-4') 
