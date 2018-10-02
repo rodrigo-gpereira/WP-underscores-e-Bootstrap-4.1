@@ -33,10 +33,14 @@ html {
 	html {
 		font-size: 1.2rem;
 	}
-} 
+}
+
+body{
+	background-color: $gray-200;
+}
 
 //extender o estilo de botões para o <!-- MORE --> link
 .more-link{
-	@extend .btn;
-	@extend .btn-primary;
+	@extend .badge;
+	@extend .badge-secondary;
 }

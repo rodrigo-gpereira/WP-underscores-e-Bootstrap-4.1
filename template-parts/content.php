@@ -57,5 +57,6 @@
 	</div> <!-- .card-body -->
 		<footer class="card-footer">
 			<?php bootstrap_base_4_1_entry_footer(); ?>
+			<?php bootstrap_base_4_1_entry_footer_tags(); ?>
 		</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
